@@ -1,6 +1,7 @@
 {
   "name": "fullstack01",
   "version": "0.0.1",
+  "homepage": "https://gorkadread.github.io/omni",
   "scripts": {
     "build:backend": "cd app-flask && pip3 install -r requirements.txt",
     "build:frontend": "cd app-react && npm install && npm run build",
@@ -8,10 +9,15 @@
     "start:backend": "cd app-flask && export FLASK_APP=app.py && python3 -m flask run",
     "start:frontend": "cd app-react &&  npm run start",
     "start": "npm run start:backend & npm run start:frontend",
-    "test": "cypress run"
+    "test": "cypress run",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "cypress": "^8.6.0",
     "postcss": "^8.4.14"
+  },
+  "dependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
