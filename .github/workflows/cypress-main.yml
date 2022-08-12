@@ -22,7 +22,7 @@ jobs:
         with:
           name: build
           if-no-files-found: error
-          path: app-react/build
+          path: build
 
   ui-chrome-tests:
     runs-on: ubuntu-latest
@@ -41,7 +41,7 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: build
-          path: app-react/build
+          path: build
 
       - name: 'UI Tests - Chrome'
         uses: cypress-io/github-action@v4
