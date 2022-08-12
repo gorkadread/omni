@@ -11,7 +11,7 @@
     "start": "npm run start:backend & npm run start:frontend",
     "test": "cypress run",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d app-react/build"
   },
   "devDependencies": {
     "cypress": "^8.6.0",
