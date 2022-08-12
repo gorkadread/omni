@@ -5,3 +5,4 @@ This app helps finding a local restaurant and presents all open options and thei
 Client-side: React with socket.io-client.
 Backend: Python, flask and flask_socketio. 
 Test: Cypress
+CI:  Github actions
