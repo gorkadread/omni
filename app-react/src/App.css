@@ -37,18 +37,16 @@
   color: white;
 }
 
-.bank-left-side{
-
-}
-
 .bank-left-side input {
   padding: 10px;
   min-width: 40vh;
   margin-bottom: 20px
 }
 
-.bank-left-side label{
-
+.bank-right-side .transaction{
+  border: 2px solid white;
+  padding: 5px;
+  margin-bottom: 5px
 }
 
 .bank-link {

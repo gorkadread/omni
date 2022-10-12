@@ -44,7 +44,7 @@ def Index():
 def Transactions(transaction_id=None):
     if request.method == 'POST':
         # This should be filled to the brim with errorhandling really...
-        data = request.get_json()
+        data = request.json
         account_id = data.get('account_id')
         amount = data.get('amount')
         # Make sure we got both account_id and amount, and that the account_id leads to an account

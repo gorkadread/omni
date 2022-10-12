@@ -19,7 +19,7 @@ const SubmitTransaction = () => {
         }),
       }).then(response => response.json()
         .then(data => {
-          // Trigger a realtime socket-call instead of this nasty props-business
+          // Trigger a realtime socket-call
           socket.emit('TransactionAdded', { 'data': { data } });
 
           setAccountId("");
