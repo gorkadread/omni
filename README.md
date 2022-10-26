@@ -1,5 +1,5 @@
 # omni
-This isn't really doing anything just yet.
+This is a nice base for any project relying on sockets. 
 
 # techniques used
 Client-side: React with socket.io-client, TypeScript.
